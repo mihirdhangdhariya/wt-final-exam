@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2-4</title>
+  </head>
+  <body>
+    <script>
+      function calculateSalary() {
+        let age = prompt("Enter your age");
+        let answer = prompt("Do you have experience? Enter yes or no");
+        let exp;
+        let salary = 0;
+        if (answer == "yes") {
+          exp = true;
+        } else if (answer == "no") {
+          exp = false;
+        }
+
+        if (exp) {
+          if (age >= 35) {
+            salary = 6000;
+          } else if (age >= 28 && age < 35) {
+            salary = 4800;
+          } else if (age < 28) {
+            salary = 3000;
+          }
+        } else {
+          salary = 2000;
+        }
+
+        alert(`Your salary is ${salary}`);
+      }
+
+      calculateSalary();
+    </script>
+  </body>
+</html>
