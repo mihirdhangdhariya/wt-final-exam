@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4-4</title>
+  </head>
+  <body>
+    <script>
+      const userCart = [
+        {
+          productId: 1,
+          productName: "Mobile",
+          price: 70000,
+        },
+        {
+          productId: 2,
+          productName: "Laptop",
+          price: 100000,
+        },
+        {
+          productId: 3,
+          productName: "Airpods",
+          price: 26900,
+        },
+        {
+          productId: 4,
+          productName: "Watch",
+          price: 30000,
+        },
+        {
+          productId: 5,
+          productName: "Shoes",
+          price: 35000,
+        },
+        {
+          productId: 6,
+          productName: "Bag",
+          price: 10000,
+        },
+      ];
+
+      const sum = userCart.reduce(
+        (totalValue, currProduct) => totalValue + currProduct.price,
+        0
+      );
+
+      console.log(`The sum is ${sum}`);
+    </script>
+  </body>
+</html>
